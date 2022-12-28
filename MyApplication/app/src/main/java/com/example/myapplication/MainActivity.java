@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
+    private Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +20,23 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openMenu();
+                openKayit();
+            }
+        });
+        button1 = (Button) findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGiris();
             }
         });
     }
-    public void openMenu(){
-        Intent intent = new Intent(this,Menu.class);
+    public void openKayit(){
+        Intent intent = new Intent(this,Kayit.class);
+        startActivity(intent);
+    }
+    public void openGiris(){
+        Intent intent = new Intent(this,Giris.class);
         startActivity(intent);
     }
 }

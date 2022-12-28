@@ -12,7 +12,9 @@ import android.widget.Toast;
 
 public class Kayit extends AppCompatActivity {
     private TextView textview;
+    private TextView textview1;
     private EditText edittext;
+    private EditText edittext1;
     private Button apply_button;
 
     public static final String SHARED_PREFS = "sheredPrefs";
@@ -26,13 +28,17 @@ public class Kayit extends AppCompatActivity {
         setContentView(R.layout.activity_kayit);
 
         textview = (TextView) findViewById(R.id.textview);
+        textview1 = (TextView) findViewById(R.id.textview1);
         edittext = (EditText) findViewById(R.id.edittext);
+        edittext1 = (EditText) findViewById(R.id.edittext1);
+
         apply_button = (Button) findViewById(R.id.apply_button);
 
         apply_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 textview.setText(edittext.getText().toString());
+                textview1.setText(edittext1.getText().toString());
                 saveData();
             }
         });

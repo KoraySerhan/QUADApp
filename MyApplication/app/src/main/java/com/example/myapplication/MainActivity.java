@@ -39,4 +39,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Giris.class);
         startActivity(intent);
     }
+
+
 }

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 openKayit();
             }
         });
-        button1 = (Button) findViewById(R.id.button1);
+        button1 = (Button) findViewById(R.id.bodyInfoButton);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

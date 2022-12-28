@@ -27,10 +27,10 @@ public class Kayit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kayit);
 
-        textview = (TextView) findViewById(R.id.textview);
-        textview1 = (TextView) findViewById(R.id.textview1);
-        edittext = (EditText) findViewById(R.id.edittext);
-        edittext1 = (EditText) findViewById(R.id.edittext1);
+        textview = (TextView) findViewById(R.id.yourNameText);
+        textview1 = (TextView) findViewById(R.id.yourAgeText);
+        edittext = (EditText) findViewById(R.id.nameInputText);
+        edittext1 = (EditText) findViewById(R.id.ageInputText);
 
         apply_button = (Button) findViewById(R.id.apply_button);
 

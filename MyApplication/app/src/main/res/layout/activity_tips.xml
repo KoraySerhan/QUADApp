@@ -17,5 +17,9 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="az ye"
+        android:textSize="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
 </LinearLayout>

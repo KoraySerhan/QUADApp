@@ -8,10 +8,26 @@
     tools:context=".body"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/bodyInfoHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        tools:text="Body Information" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        app:srcCompat="@drawable/body"/>
 
     <TextView
         android:id="@+id/yourNameText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
@@ -20,10 +36,26 @@
 
     <TextView
         android:id="@+id/yourAgeText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:textSize="30dp"
         tools:text="Boyunuz: " />
+
+    <TextView
+        android:id="@+id/yourWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textSize="30dp"
+        tools:text="Kilonuz: " />
+
+    <TextView
+        android:id="@+id/yourGenderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textSize="30dp"
+        tools:text="Cinsiyetiniz: " />
 
 </LinearLayout>

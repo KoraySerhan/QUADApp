@@ -16,7 +16,7 @@
         android:layout_marginLeft="90dp"
         android:layout_marginTop="30dp"
         android:textSize="30dp"
-        tools:text="Body Information" />
+        android:text="Body Information" />
 
     <ImageView
         android:layout_width="300dp"
@@ -32,7 +32,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:textSize="30dp"
-        tools:text="Adınız: " />
+        android:text="Adınız: " />
 
     <TextView
         android:id="@+id/yourAgeText"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:textSize="30dp"
-        tools:text="Boyunuz: " />
+        android:text="Boyunuz: " />
 
     <TextView
         android:id="@+id/yourWeightText"
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:textSize="30dp"
-        tools:text="Kilonuz: " />
+        android:text="Kilonuz: " />
 
     <TextView
         android:id="@+id/yourGenderText"
@@ -56,6 +56,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:textSize="30dp"
-        tools:text="Cinsiyetiniz: " />
+        android:text="Cinsiyetiniz: " />
 
 </LinearLayout>

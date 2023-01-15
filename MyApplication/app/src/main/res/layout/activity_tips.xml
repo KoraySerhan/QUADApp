@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ABFFFF"
+    android:background="@color/constrainColor"
     tools:context=".body"
     android:orientation="vertical">
 
     <ImageView
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="150dp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="50dp"
         app:srcCompat="@drawable/tips"/>
@@ -18,8 +18,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="az ye"
-        android:textSize="30dp"
+        android:text="Erken aşamada kullanımını azaltabilirsin.\n
+        \nBırakma nedenlerini bir kağıda yaz. Bu senin motive kalmanı sağlar.\n
+        \nDekoratif şişelerin veya alkol işaretlerin varsa bunlardan kurtul. Bunlar içme isteğini tetikleyebilir."
+        android:textSize="25dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"/>
 </LinearLayout>

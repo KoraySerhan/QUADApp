@@ -32,6 +32,11 @@ public class KayitOlmaSayfasi extends AppCompatActivity {
         preferences = getSharedPreferences("MyPreferences",MODE_PRIVATE);
         editor = preferences.edit();
 
+        if(preferences.contains("Saved_Name")){
+            Intent intent = new Intent(KayitOlmaSayfasi.this, GirisSayfasi.class);
+            startActivity(intent);
+        }
+
         Name = findViewById(R.id.kayıtKullanıcıAdı);
         Psd = findViewById(R.id.kayıtParola);
         button = (Button) findViewById(R.id.btnKaydet);

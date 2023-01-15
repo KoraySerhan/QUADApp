@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class Menu extends AppCompatActivity {
     private Button button;
+    private Button button2;
 
 
     @Override
@@ -22,6 +23,13 @@ public class Menu extends AppCompatActivity {
                 openbody();
             }
         });
+        button2 = (Button) findViewById(R.id.tipsButton);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opentips();
+            }
+        });
 
     }
     public void counterScreen(View view){
@@ -30,6 +38,10 @@ public class Menu extends AppCompatActivity {
     }
     public void openbody(){
         Intent intent = new Intent(this,body.class);
+        startActivity(intent);
+    }
+    public void opentips(){
+        Intent intent = new Intent(this, tips.class);
         startActivity(intent);
     }
 }

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class KayitOlmaSayfasi extends AppCompatActivity {
     private Button button;
@@ -32,11 +33,6 @@ public class KayitOlmaSayfasi extends AppCompatActivity {
         preferences = getSharedPreferences("MyPreferences",MODE_PRIVATE);
         editor = preferences.edit();
 
-        if(preferences.contains("Saved_Name")){
-            Intent intent = new Intent(KayitOlmaSayfasi.this, MainActivity.class);
-            startActivity(intent);
-        }
-
         Name = findViewById(R.id.kayıtKullanıcıAdı);
         Psd = findViewById(R.id.kayıtParola);
         button = (Button) findViewById(R.id.btnKaydet);
@@ -48,7 +44,8 @@ public class KayitOlmaSayfasi extends AppCompatActivity {
                 editor.putString("Saved_Name", my_name);
                 editor.putString("Saved_password",my_password);
                 editor.commit();
-                openGiris();
+                Toast.makeText(getApplicationContext(), "Successful",
+                        Toast.LENGTH_LONG).show();
             }
         });
     }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/constrainColor"
-    tools:context=".GirisSayfasi"
+    tools:context=".MainActivity"
     tools:layout_editor_absoluteY="25dp">
 
     <ImageView
@@ -45,6 +45,7 @@
         android:drawableLeft="@drawable/account"
         android:ems="10"
         android:hint="Kullanıcı Adı"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
         android:padding="10dp"
         android:textColorHint="@color/black"
@@ -64,6 +65,7 @@
         android:drawableLeft="@drawable/lock"
         android:ems="10"
         android:hint="Parola"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
         android:padding="10dp"
         android:textColorHint="@color/black"

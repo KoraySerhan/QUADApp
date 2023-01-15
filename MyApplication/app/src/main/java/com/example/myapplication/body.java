@@ -40,8 +40,9 @@ public class body extends AppCompatActivity {
                 String Boy = Boyu.getText().toString();
                 String Yaş = Yaşı.getText().toString();
                 String Cinsiyet = Cinsiyeti.getText().toString();
+                String total = AD + "," + Boy + "," +  Yaş + "," + Cinsiyet;
 
-                databaseReference.setValue(AD);
+                databaseReference.setValue(total);
 
             }
         });

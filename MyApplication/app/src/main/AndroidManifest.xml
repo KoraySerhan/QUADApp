@@ -20,13 +20,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".GirisSayfasi"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".tips"
             android:exported="false">
             <meta-data
@@ -49,20 +42,6 @@
         </activity>
         <activity
             android:name=".counter"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Kayit"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Giris"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

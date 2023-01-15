@@ -33,7 +33,7 @@ public class KayitOlmaSayfasi extends AppCompatActivity {
         editor = preferences.edit();
 
         if(preferences.contains("Saved_Name")){
-            Intent intent = new Intent(KayitOlmaSayfasi.this, GirisSayfasi.class);
+            Intent intent = new Intent(KayitOlmaSayfasi.this, MainActivity.class);
             startActivity(intent);
         }
 
@@ -53,7 +53,7 @@ public class KayitOlmaSayfasi extends AppCompatActivity {
         });
     }
     public void openGiris(){
-        Intent intent = new Intent(this, Giris.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

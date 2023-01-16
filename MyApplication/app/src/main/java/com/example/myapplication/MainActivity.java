@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
                 Name1 = findViewById(R.id.girişKullanıcıAdı);
                 String my_name =  Name1.getText().toString();
                 Password = findViewById(R.id.girişParola);
-                String passoword =  Password.getText().toString();
+                String password =  Password.getText().toString();
 
                 SharedPreferences result = getSharedPreferences("MyPreferences",MODE_PRIVATE);
                 String value = result.getString("Saved_Name","");
                 String value1 = result.getString("Saved_password","");
-                if(Objects.equals(value, my_name) && Objects.equals(value1,passoword)){
+                if(Objects.equals(value, my_name) && Objects.equals(value1,password)){
                     openMenu();
                 }
                 else{

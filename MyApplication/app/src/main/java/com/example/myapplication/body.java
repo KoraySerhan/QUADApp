@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -39,6 +40,8 @@ public class body extends AppCompatActivity {
                 String Yaş = Yaşı.getText().toString();
                 String Cinsiyet = Cinsiyeti.getText().toString();
                 String total = AD + "," + Boy + "," +  Yaş + "," + Cinsiyet;
+                Toast.makeText(getApplicationContext(), "Successful",
+                        Toast.LENGTH_LONG).show();
 
                 databaseReference.setValue(total);
 

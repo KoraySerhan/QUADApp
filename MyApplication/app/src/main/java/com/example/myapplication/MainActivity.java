@@ -1,23 +1,29 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import java.util.Objects;
+
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
     private Button button1;
     EditText Name1;
-    EditText Passaword;
+    EditText Password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Name1 = findViewById(R.id.girişKullanıcıAdı);
                 String my_name =  Name1.getText().toString();
-                Passaword = findViewById(R.id.girişParola);
-                String passoword =  Passaword.getText().toString();
+                Password = findViewById(R.id.girişParola);
+                String passoword =  Password.getText().toString();
 
                 SharedPreferences result = getSharedPreferences("MyPreferences",MODE_PRIVATE);
                 String value = result.getString("Saved_Name","");
@@ -54,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
     public void openMenu(){
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
@@ -62,5 +69,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, KayitOlmaSayfasi.class);
         startActivity(intent);
     }
+
+
 }
 

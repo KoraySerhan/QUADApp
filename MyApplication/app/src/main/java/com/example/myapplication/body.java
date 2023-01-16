@@ -18,8 +18,6 @@ public class body extends AppCompatActivity {
     private EditText Adı, Boyu, Yaşı, Cinsiyeti;
     private Button Kayıtbutton;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
